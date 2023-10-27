@@ -42,6 +42,11 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'contracts/addresses',
+      label: 'Contract addresses',
+    },
+    {
+      type: 'doc',
       id: 'contracts/warp-link',
     },
     {
