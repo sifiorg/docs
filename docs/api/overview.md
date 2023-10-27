@@ -11,4 +11,4 @@ The REST API allows anyone to integrate with Sifi to request quotes and perform 
 
 ## Endpoints
 
-See the [SDK source-code](https://github.com/sifiorg/sifi/tree/master/packages/sdk) for a list of endpoints.
+See the [SDK source code](https://github.com/sifiorg/sifi/tree/master/packages/sdk) for a list of endpoints.
