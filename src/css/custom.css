@@ -1,0 +1,194 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+:root {
+  --ifm-get-primary: #6fc651;
+  --ifm-post-primary: #f5d946;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Vectrex", monospace;
+  --ifm-font-size: 40px;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] {
+  background-color: #f2f2f2;
+  --ifm-color-primary: #000000;
+  --ifm-color-primary-dark: #2b2b2b;
+  --ifm-color-primary-darker: #232323;
+  --ifm-color-primary-darkest: #1a1a1a;
+  --ifm-color-primary-light: #3b3b3b;
+  --ifm-color-primary-lighter: #444444;
+  --ifm-color-primary-lightest: #4d4d4d;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  background-color: #110b0b;
+  --ifm-color-primary: #54b8f5;
+  --ifm-color-primary-dark: #339ad0;
+  --ifm-color-primary-darker: #2383ab;
+  --ifm-color-primary-darkest: #1a6586;
+  --ifm-color-primary-light: #75c6f8;
+  --ifm-color-primary-lighter: #96d4fb;
+  --ifm-color-primary-lightest: #b7e2fe;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .landing-container h1 {
+  color: white;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+th,
+td {
+  font-family: "Helvetica", sans-serif;
+}
+
+code {
+  font-family: "GT Pressura Mono", monospace;
+}
+
+p,
+code {
+  line-height: 2;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding-bottom: 55px;
+}
+
+.navbar__logo img {
+  height: 75%;
+  margin-top: 3px;
+}
+
+.api-method > .menu__link {
+  align-items: center;
+  justify-content: start;
+  font-weight: 500;
+}
+
+.api-method > .menu__link::before {
+  width: 35px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 1.45px;
+  border-radius: 0.25rem;
+  border: 1px solid;
+  margin-right: var(--ifm-spacing-horizontal);
+  text-align: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  color: #141417;
+}
+
+.badge--primary {
+  color: #110b0b;
+  background-color: var(--ifm-get-primary);
+  border-radius: 0.25rem;
+  border-color: var(--ifm-get-primary);
+  font-family: "GT Pressura Mono", monospace;
+  font-weight: bold;
+  padding: 4px 5px 2.5px 5px;
+}
+
+.badge--success {
+  color: #110b0b;
+  background-color: var(--ifm-post-primary);
+  border-color: var(--ifm-post-primary);
+  font-family: "GT Pressura Mono", monospace;
+  font-weight: bold;
+  padding: 4px 3px 2px;
+}
+
+.get > .menu__link::before {
+  content: "get";
+  background-color: var(--ifm-get-primary);
+  font-family: "GT Pressura Mono", monospace;
+  font-weight: bold;
+  padding-top: 1.4px;
+}
+
+.post > .menu__link::before {
+  content: "post";
+  background-color: var(--ifm-post-primary);
+  font-family: "GT Pressura Mono", monospace;
+  font-weight: bold;
+  padding-top: 1.4px;
+}
+
+.header-github-link:hover {
+  opacity: 0.6;
+}
+
+.header-github-link::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+[data-theme="dark"] .header-github-link::before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+/* Reduce width on mobile for Mendable Search */
+@media (max-width: 767px) {
+  .mendable-search {
+    width: 200px;
+  }
+  .navbar {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mendable-search {
+    width: 150px;
+  }
+  .navbar {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .mendable-search {
+    width: 140px;
+  }
+  .navbar {
+    padding: 5px;
+  }
+}
+
+/* Hide logo mobile */
+@media (max-width: 996px) {
+  .navbar__brand,
+  .navbar__logo {
+    display: none;
+  }
+
+  /* Show logo on sidebar */
+  .navbar-sidebar__brand .navbar__brand,
+  .navbar-sidebar__brand .navbar__logo {
+    display: block;
+  }
+}
