@@ -73,7 +73,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'culture',
             position: 'left',
-            label: 'culture',
+            label: 'Culture',
           },
           {
             type: 'docSidebar',
