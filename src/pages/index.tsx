@@ -27,7 +27,7 @@ export default function Home() {
     {
       title: 'What is Sifi',
       description: 'Learn what Sifi is and why you should be using it.',
-      link: '/principles/overview',
+      link: '/culture/overview',
     },
     {
       title: 'Integrate the SDK',

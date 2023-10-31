@@ -71,9 +71,9 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'principles',
+            sidebarId: 'culture',
             position: 'left',
-            label: 'Principles',
+            label: 'culture',
           },
           {
             type: 'docSidebar',

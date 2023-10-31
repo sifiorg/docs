@@ -13,14 +13,14 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 module.exports = {
-  principles: [
+  culture: [
     {
       type: 'doc',
-      id: 'principles/overview',
+      id: 'culture/overview',
     },
     {
       type: 'doc',
-      id: 'principles/glossary',
+      id: 'culture/glossary',
     },
   ],
   sdk: [
