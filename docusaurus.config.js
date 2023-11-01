@@ -1,45 +1,45 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Sifi Docs | Sifi',
-  tagline: 'tagline',
-  favicon: 'img/favicon.ico',
+  title: "Sifi Docs | Sifi",
+  tagline: "tagline",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://docs.sifi.org',
+  url: "https://docs.sifi.org",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '', // Usually your GitHub org/user name.
-  projectName: '', // Usually your repo name.
+  organizationName: "", // Usually your GitHub org/user name.
+  projectName: "", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
           breadcrumbs: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -47,7 +47,7 @@ const config = {
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -67,31 +67,31 @@ const config = {
         },
       },
       navbar: {
-        title: 'Sifi Docs',
+        title: "Sifi Docs",
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'culture',
-            position: 'left',
-            label: 'Culture',
+            type: "docSidebar",
+            sidebarId: "culture",
+            position: "left",
+            label: "Culture",
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'sdk',
-            position: 'left',
-            label: 'SDK',
+            type: "docSidebar",
+            sidebarId: "sdk",
+            position: "left",
+            label: "SDK",
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'api',
-            position: 'left',
-            label: 'API',
+            type: "docSidebar",
+            sidebarId: "api",
+            position: "left",
+            label: "API",
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'contracts',
-            position: 'left',
-            label: 'Contracts',
+            type: "docSidebar",
+            sidebarId: "contracts",
+            position: "left",
+            label: "Contracts",
           },
           // {
           //   type: 'docSidebar',
@@ -100,13 +100,13 @@ const config = {
           //   href: 'https://t.me/joinchat/UuTn4HeK-2EUG1zZ',
           // },
           {
-            type: 'search',
-            position: 'right',
+            type: "search",
+            position: "right",
           },
           {
-            href: 'https://github.com/sifiorg',
-            position: 'right',
-            className: 'header-github-link',
+            href: "https://github.com/sifiorg",
+            position: "right",
+            className: "header-github-link",
           },
         ],
       },
@@ -158,6 +158,39 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: "VHLITW7TUR",
+
+        // Public API key: it is safe to commit it
+        apiKey: "65ea3f24a58c426d02508860c6cd6c9f",
+
+        indexName: "sifi",
+
+        insights: true, // Optional, automatically send insights when user interacts with search results
+
+        debug: false, // Set debug to true if you want to inspect the modal
+
+        // Optional: see doc section below
+        // contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        // externalUrlRegex: "external\\.com|domain\\.com",
+
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        // replaceSearchResultPathname: {
+        //   from: "/docs/", // or as RegExp: /\/docs\//
+        //   to: "/",
+        // },
+
+        // Optional: Algolia search parameters
+        // searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: "search",
+
+        //... other Algolia params
       },
     }),
 };
