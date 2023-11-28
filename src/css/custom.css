@@ -49,8 +49,13 @@ h3,
 p,
 a,
 th,
+li,
 td {
   font-family: "Helvetica", sans-serif;
+}
+
+article a {
+  color: #3578e5;
 }
 
 code {

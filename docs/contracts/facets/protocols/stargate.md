@@ -4,7 +4,13 @@ title: Stargate
 
 The following functions are optimized to bridge with Stargate using as little gas as possible.
 
+See [Conventions](../../conventions) for common fields.
+
+See the [Stargate Docs](https://stargateprotocol.gitbook.io/stargate/) for chain and pool identifiers.
+
 ## stargateJumpNative
+
+Bridge exactly `amountIn` of of the native token using Stargate.
 
 ```solidity
 struct JumpNativeParams {
@@ -32,6 +38,8 @@ function stargateJumpNative(JumpNativeParams calldata params) external payable;
 
 ### stargateJumpToken
 
+Bridge exactly `amountIn` of `token` using Stargate.
+
 ```solidity
 struct JumpTokenParams {
   address token;
@@ -52,6 +60,11 @@ struct JumpTokenParams {
 }
 
 function stargateJumpToken(
+  JumpTokenParams calldata params,
+  PermitParams calldata permit
+) external payable;
+
+function stargateJumpTokenPermit(
   JumpTokenParams calldata params,
   PermitParams calldata permit
 ) external payable;

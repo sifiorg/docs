@@ -27,23 +27,23 @@ export default function Home() {
     {
       title: 'What is Sifi',
       description: 'Learn what Sifi is and why you should be using it.',
-      link: '/culture/overview',
+      link: '/culture',
     },
     {
       title: 'Integrate the SDK',
       description: 'The Sifi SDK is the easiest way to integrate Sifi swaps.',
-      link: '/sdk/overview',
+      link: '/sdk',
     },
     {
       title: 'REST API',
       description: 'Learn how to use the Sifi REST API.',
-      link: '/api/overview',
+      link: '/api',
     },
     {
       title: 'Sifi smart contracts',
       description:
         'Learn how to interact directly with the Sifi smart contracts.',
-      link: '/contracts/overview',
+      link: '/contracts',
     },
   ];
 
